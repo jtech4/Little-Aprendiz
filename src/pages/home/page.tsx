@@ -429,7 +429,7 @@ export default function HomePage() {
                 {[
                   { icon: 'ri-time-line', text: 'Monday – Friday, Upon Availability' },
                   { icon: 'ri-phone-line', text: '(714) 951-8609' },
-                  { icon: 'ri-map-pin-line', text: 'Huntington Beach, CA 92648' },
+                  { icon: 'ri-map-pin-line', text: '1717 Florida St, Huntington Beach, CA 92648' },
                 ].map((i) => (
                   <div key={i.text} className="flex items-center gap-3">
                     <div className="w-9 h-9 flex items-center justify-center rounded-full bg-[#FF8B7B]/15 flex-shrink-0">
@@ -550,7 +550,7 @@ export default function HomePage() {
             <div className="w-full lg:w-3/5 rounded-3xl overflow-hidden" style={{ minHeight: '380px' }}>
               <iframe
                 title="Little Aprendiz Location"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3314.2!2d-117.9880!3d33.6740!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1700000000005!5m2!1sen!2sus"
+                src="https://www.google.com/maps?q=1717%20Florida%20St%2C%20Huntington%20Beach%2C%20CA%2092648&z=16&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: '380px' }}
@@ -565,7 +565,7 @@ export default function HomePage() {
                 <h3 className="font-bold text-gray-800 text-lg mb-4">Little Aprendiz</h3>
                 <div className="flex flex-col gap-4">
                   {[
-                    { icon: 'ri-map-pin-line', label: 'Address', value: 'Huntington Beach, CA 92648' },
+                    { icon: 'ri-map-pin-line', label: 'Address', value: '1717 Florida St, Huntington Beach, CA 92648' },
                     { icon: 'ri-time-line', label: 'Hours', value: 'Monday – Friday\n8:00am – 4:00pm' },
                     { icon: 'ri-group-2-line', label: 'Age Range', value: '1 year – 5 years' },
                     { icon: 'ri-calendar-line', label: 'Established Since', value: '2018' },
@@ -627,7 +627,7 @@ export default function HomePage() {
                 {[
                   { icon: 'ri-phone-line', text: '(714) 951-8609' },
                   { icon: 'ri-mail-line', text: 'littleaprendizca@gmail.com' },
-                  { icon: 'ri-map-pin-line', text: 'Huntington Beach, CA 92648' },
+                  { icon: 'ri-map-pin-line', text: '1717 Florida St, Huntington Beach, CA 92648' },
                   { icon: 'ri-time-line', text: 'Mon–Fri, 8:00am–4:00pm' },
                 ].map((c) => (
                   <div key={c.text} className="flex items-center gap-2 text-white/60 text-sm">
