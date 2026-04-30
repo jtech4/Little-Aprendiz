@@ -1,23 +1,11 @@
 # Little Aprendiz Website
 
-GitHub/Netlify-ready export from Readdy.
-
-## Local preview
-
-```bash
-npm install
-npm run dev
-```
+Netlify-ready React/Vite export.
 
 ## Netlify settings
 
-- Build command: `npm run build`
-- Publish directory: `out`
+Build command: `npm run build`
 
-## Images
+Publish directory: `out`
 
-All website images are stored in `public/assets/`.
-
-## Tour Button
-
-The Schedule a Tour buttons currently use placeholder links. Replace them with Adryana's Google Calendar booking page URL once she provides it.
+Images are stored in `public/assets/`.

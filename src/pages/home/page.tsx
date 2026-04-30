@@ -15,21 +15,21 @@ const TESTIMONIALS = [
     role: 'Parent',
     text: "Ms. Roman's enthusiasm and love for her students makes me smile each time I drop my daughter off at school. I feel comforted knowing Ms. Roman truly cares about my child - she always makes a point to provide feedback at the end of every day and bridge concepts we review at home into her school day.\n\nHer curriculum not only prepares your child academically for kindergarten, but also focuses on strengthening social and interpersonal skills. She makes each child feel important and she works with each parent to ensure your child is growing into a confident, caring, and inquisitive person. We feel very lucky to have Ms. Roman in our lives.",
     stars: 5,
-    avatar: '/assets/logo.jpeg',
+    avatar: '',
   },
   {
     name: 'Matt B.',
     role: 'Parent',
     text: "Ms. Roman has been our daughter's teacher at her preschool and she has been amazing! During her time with Ms. Roman, not only did our daughter (now 4.5) learn social and developmentally appropriate interactions and interpersonal skills, but she has grown academically beyond our expectations.\n\nNot to mention, Ms. Roman is also full of love! She gives every child personal attention, care, and ensures that each individual is valued and feels safe at school. Great teaching, consistent practice, and reinforcement of skills necessary for our 4 year old to be ready for TK this coming year have been highlights.\n\nAs an elementary school Principal, I have no doubt that Ms. Roman's teaching has been above and beyond in setting our daughter on the right path for a successful education.",
     stars: 5,
-    avatar: '/assets/logo.jpeg',
+    avatar: '',
   },
   {
     name: 'Carolina G.',
     role: 'Parent',
     text: "My daughter started at Little Aprendiz last year, and the improvement she has had in her speech and social skills is amazing. I'm forever grateful to Miss Roman and Leo. Being a working mom and having peace of mind when I leave my daughter at school is priceless. I love Little Aprendiz. I love the application they use, so I can see updates during the day of what my daughter is doing. Amazing place.",
     stars: 5,
-    avatar: '/assets/logo.jpeg',
+    avatar: '',
   },
 ];
 
@@ -48,13 +48,13 @@ const BASICS = [
 
 const HERO_SLIDES = [
   '/assets/background.webp',
-  '/assets/story-time.webp',
-  '/assets/interactive-learning-spaces.jpg',
-  '/assets/neighborhood-walk.jpg',
-  '/assets/animal-mask-play.jpg',
-  '/assets/meal-time-cropped.jpg',
-  '/assets/motor-movement.jpg',
+  '/assets/art-activity.jpg',
   '/assets/outdoor-parachute.jpg',
+  '/assets/meal-time.jpg',
+  '/assets/animal-mask-play.jpg',
+  '/assets/neighborhood-walk.jpg',
+  '/assets/ground-learning.jpg',
+  '/assets/outdoor-pet-activity.jpg',
 ];
 
 export default function HomePage() {
@@ -122,7 +122,7 @@ export default function HomePage() {
           {/* CTA */}
           <div className="flex items-center gap-3">
             <a
-              href="#"
+              href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2tHCSJEuOkH04SiajERCp8TgdNH0niy_ZackQkUXitZEYOPg5PKCPSbgl-u0I9TUSYtCucZRS5"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:flex items-center gap-2 bg-[#FF8B7B] hover:bg-[#ff7060] text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors cursor-pointer whitespace-nowrap"
@@ -168,14 +168,14 @@ export default function HomePage() {
         {HERO_SLIDES.map((src, idx) => (
           <div
             key={src}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
+            className={`absolute inset-0 transition-opacity duration-[1500ms] ease-in-out ${
               idx === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'
             }`}
           >
             <img
               src={src}
               alt=""
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-cover object-center"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/40 to-black/20"></div>
           </div>
@@ -244,11 +244,11 @@ export default function HomePage() {
       <section id="philosophy" className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="flex flex-col lg:flex-row items-center gap-10 md:gap-16">
-            <div className="w-full lg:w-1/2 rounded-3xl overflow-hidden flex-shrink-0" style={{ height: '420px' }}>
+            <div className="w-full lg:w-1/2 rounded-3xl overflow-hidden flex-shrink-0 bg-[#F4F9F6]" style={{ height: '420px' }}>
               <img
                 src="/assets/teachers.jpg"
                 alt="Philosophy - Play-based learning"
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-contain"
               />
             </div>
             <div className="w-full lg:w-1/2">
@@ -316,24 +316,14 @@ export default function HomePage() {
               { img: '/assets/meal-time.jpg', label: 'Meal Time' },
               { img: '/assets/story-time.webp', label: 'Story Time' },
               { img: '/assets/motor-movement.jpg', label: 'Motor & Movement' },
+              { img: '/assets/math-science.jpg', label: 'Math & Science' },
             ].map((item) => (
               <div key={item.label} className="relative rounded-2xl overflow-hidden group cursor-pointer" style={{ height: '220px' }}>
-                <img src={item.img} alt={item.label} className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" />
+                <img src={item.img} alt={item.label} className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 <span className="absolute bottom-4 left-4 text-white font-semibold text-sm">{item.label}</span>
               </div>
             ))}
-            {/* Video tile - upload your video to replace this */}
-            <div className="relative rounded-2xl overflow-hidden bg-gray-900" style={{ height: '220px' }}>
-              <div className="w-full h-full flex flex-col items-center justify-center gap-3 text-white/50">
-                <div className="w-14 h-14 flex items-center justify-center rounded-full border-2 border-white/20">
-                  <i className="ri-play-fill text-2xl text-white/60"></i>
-                </div>
-                <span className="text-sm font-medium text-white/50">Upload your video here</span>
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-              <span className="absolute bottom-4 left-4 text-white font-semibold text-sm">Math &amp; Science</span>
-            </div>
           </div>
 
           {/* Daily Routine */}
@@ -453,7 +443,7 @@ export default function HomePage() {
 
             <div className="w-full lg:w-7/12 flex items-center justify-center">
               <a
-                href="#"
+                href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2tHCSJEuOkH04SiajERCp8TgdNH0niy_ZackQkUXitZEYOPg5PKCPSbgl-u0I9TUSYtCucZRS5"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 bg-[#FF8B7B] hover:bg-[#ff7060] text-white font-bold px-12 py-5 rounded-full text-lg transition-colors cursor-pointer whitespace-nowrap"
@@ -496,8 +486,8 @@ export default function HomePage() {
                 </div>
                 <p className="text-gray-600 text-sm leading-relaxed flex-1 whitespace-pre-line">&ldquo;{t.text}&rdquo;</p>
                 <div className="flex items-center gap-3 pt-2 border-t border-gray-50">
-                  <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
-                    <img src={t.avatar} alt={t.name} className="w-full h-full object-cover object-top" />
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 bg-[#FFF0EB] text-[#FF8B7B] font-bold">
+                    {t.name.charAt(0)}
                   </div>
                   <div>
                     <p className="font-bold text-gray-800 text-sm">{t.name}</p>
@@ -522,11 +512,11 @@ export default function HomePage() {
               <p className="text-gray-500 leading-relaxed mb-6">
                 After your tour, we&apos;d love to welcome your child to the Little Aprendiz family. Fill out the form and our enrollment specialist will reach out to guide you through the next steps.
               </p>
-              <div className="rounded-2xl overflow-hidden" style={{ height: '220px' }}>
+              <div className="rounded-2xl overflow-hidden bg-[#F4F9F6]" style={{ height: '220px' }}>
                 <img
                   src="/assets/ready-to-enroll.webp"
                   alt="Enrollment"
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-contain"
                 />
               </div>
             </div>
