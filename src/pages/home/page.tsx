@@ -582,15 +582,6 @@ export default function HomePage() {
                   ))}
                 </div>
               </div>
-              <a
-                href="https://maps.google.com/?q=Huntington+Beach+CA+92648"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                className="flex items-center justify-center gap-2 border-2 border-[#5BAD8F] text-[#5BAD8F] font-semibold py-3 rounded-full hover:bg-[#5BAD8F] hover:text-white transition-colors cursor-pointer whitespace-nowrap"
-              >
-                <i className="ri-navigation-line"></i>
-                Get Directions
-              </a>
             </div>
           </div>
         </div>
