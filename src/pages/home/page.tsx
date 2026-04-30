@@ -550,7 +550,7 @@ export default function HomePage() {
             <div className="w-full lg:w-3/5 rounded-3xl overflow-hidden" style={{ minHeight: '380px' }}>
               <iframe
                 title="Little Aprendiz Location"
-                src="https://www.google.com/maps?q=Adams%20Ave%20%26%20Beach%20Blvd%2C%20Huntington%20Beach%2C%20CA&z=15&output=embed"
+                src="https://www.google.com/maps?q=33.6740,-117.9880&z=16&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: '380px' }}
