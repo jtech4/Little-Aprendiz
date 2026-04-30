@@ -550,7 +550,7 @@ export default function HomePage() {
             <div className="w-full lg:w-3/5 rounded-3xl overflow-hidden" style={{ minHeight: '380px' }}>
               <iframe
                 title="Little Aprendiz Location"
-                src="https://www.google.com/maps?q=33.6740,-117.9880&z=16&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3314.2!2d-117.9880!3d33.6740!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1700000000005!5m2!1sen!2sus"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: '380px' }}
