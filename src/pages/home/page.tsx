@@ -316,7 +316,7 @@ export default function HomePage() {
               { img: '/assets/meal-time.jpg', label: 'Meal Time' },
               { img: '/assets/story-time.webp', label: 'Story Time' },
               { img: '/assets/motor-movement.jpg', label: 'Motor & Movement' },
-              { img: '/assets/math-science.jpg', label: 'Math & Science' },
+              { img: '/assets/math-science2.jpg', label: 'Math & Science' },
             ].map((item) => (
               <div key={item.label} className="relative rounded-2xl overflow-hidden group cursor-pointer" style={{ height: '220px' }}>
                 <img src={item.img} alt={item.label} className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
