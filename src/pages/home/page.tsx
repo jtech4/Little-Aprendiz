@@ -283,7 +283,7 @@ export default function HomePage() {
               A Day at Little Aprendiz
             </h2>
             <p className="text-gray-500 max-w-xl mx-auto text-sm md:text-base leading-relaxed">
-              Every day is filled with purposeful play, Spanish language activities, creative arts, and warm community. Here&apos;s a glimpse into our world.
+              Our days are designed with purposeful play, Spanish language exposure, hands-on activities, and meaningful moments of connection. Here’s a glimpse into our world.
             </p>
           </div>
 
